@@ -13,10 +13,7 @@ namespace EGaDSTutorial
         #region Singleton
 
         private static Player _instance;
-        public static Player Instance
-        {
-            get { return _instance ? _instance : (_instance = FindObjectOfType<Player>()); }
-        }
+        public static Player Instance => _instance ? _instance : (_instance = FindObjectOfType<Player>());
 
         #endregion
 
@@ -24,7 +21,9 @@ namespace EGaDSTutorial
 
         public void Update()
         {
-            transform.position = transform.position + new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * Time.deltaTime * _speed;
+            transform.position = 
+                transform.position + _speed * Time.deltaTime * 
+                new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         }
     
         #endregion
@@ -37,9 +36,5 @@ namespace EGaDSTutorial
         }
 
         #endregion
-        
-        
-        
-        
     }
 }

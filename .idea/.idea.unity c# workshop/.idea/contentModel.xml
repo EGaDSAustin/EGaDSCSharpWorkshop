@@ -6,12 +6,14 @@
     <e p="C:\Users\Ian\Documents\capstone\unity c# workshop" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
-          <e p="Gem.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
-          <e p="Tests.cs" t="Include" />
-          <e p="UI" t="Include">
-            <e p="RenderMoney.cs" t="Include" />
+        <e p="Init" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Gem.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="Tests.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="RenderMoney.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

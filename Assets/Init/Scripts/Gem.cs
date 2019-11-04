@@ -6,16 +6,17 @@ namespace EGaDSTutorial
 {
     public interface IGem
     {
+        float Value { get; }
         void OnPickup();
-        
     }
     
     
     [RequireComponent(typeof(Collider2D))]
-    [AddComponentMenu("Gem/Gem")]
+    [AddComponentMenu("Gem/BaseGem")]
     public class Gem : MonoBehaviour, IGem
     {
         [SerializeField] private float _value;
+        public float Value => _value;
         
         public void OnPickup()
         {
